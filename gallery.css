@@ -1,0 +1,48 @@
+body {
+  margin: 20px;
+  padding: 0;
+  background: #261b1b;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  border: whitesmoke solid 3px;
+  background: beige;
+  border-bottom: 0;
+}
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.injustice {
+height: 90%;}
+#current {
+  max-height: 370px;
+  width: 100%;
+  /* text-align: center; */
+  /* display: flex; */
+  /* align-content: center; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.opacity{
+opacity: 0.4;
+}
+/* fade in animation */
+@keyframes fadeIn {
+to{
+  opacity: 1 ;
+}
+}
+.fade-in{
+opacity: 0;
+animation: fadeIn 0.5s ease-in 1 forwards;
+}
